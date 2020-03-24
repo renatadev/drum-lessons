@@ -15,6 +15,9 @@ const Landing = styled.div`
   background-size: cover;
   background-attachment: initial;
   display: flex;
+  /* box-shadow: 0px 6px 6px rgba(254, 141, 8, 0.06);
+  -webkit-box-shadow: 0px 6px 6px rgba(254, 141, 8, 0.06);
+  -moz-box-shadow: 0px 6px 6px rgba(254, 141, 8, 0.06); */
 `;
 
 const LandingText = styled.div`
@@ -29,6 +32,15 @@ const LandingText = styled.div`
     margin: 0 2rem 1rem 2rem;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+  a.instr {
+    text-decoration: none;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    margin-left: 2rem;
+  }
+  a.instr:hover {
+    text-decoration: underline;
+  }
   @media only screen and (max-width: 600px) {
     h1 {
       font-size: 3.5rem;
@@ -40,19 +52,20 @@ const Button = styled.button`
   width: 18vw;
   height: 8vh;
   font-weight: 700;
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem 1.5rem 2rem;
   background-color: #fe8d08;
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 4px 4px rgba(239, 231, 231, 0.38);
-  -webkit-box-shadow: 0px 4px 4px rgba(239, 231, 231, 0.38);
-  -moz-box-shadow: 0px 4px 4px rgba(239, 231, 231, 0.38);
+  box-shadow: 2px 2px 4px rgba(239, 231, 231, 0.38);
+  -webkit-box-shadow: 2px 2px 4px rgba(239, 231, 231, 0.38);
+  -moz-box-shadow: 2px 2px 4px rgba(239, 231, 231, 0.38);
   color: #000000;
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.5s;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   &:hover {
-    background-color: #ffffff;
+    background-color: #ffc880;
   }
   @media only screen and (max-width: 600px) {
     width: 35vw;
