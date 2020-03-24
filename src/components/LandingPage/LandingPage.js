@@ -14,7 +14,9 @@ const LandingPage = () => {
           <br />
         </h1>
         <p>WITH MR JAMES</p>
-        <SC.Button>BOOK A LESSON &#8594;</SC.Button>
+        <SC.Button>
+          <span>BOOK A LESSON &#8594;</span>
+        </SC.Button>
       </SC.LandingText>
     </SC.Landing>
   );
