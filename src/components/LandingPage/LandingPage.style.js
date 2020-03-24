@@ -24,23 +24,43 @@ const LandingText = styled.div`
   font-family: Montserrat;
   text-shadow: 0px 6px 6px #000000;
   font-weight: 700;
+
   h1 {
     font-size: 6rem;
     margin: 4rem 2rem 0.5rem 2rem;
   }
+
   p {
     margin: 0 2rem 1rem 2rem;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
+
   a.instr {
     text-decoration: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: #ffffff;
     margin-left: 2rem;
+    position: relative;
   }
-  a.instr:hover {
-    text-decoration: underline;
+
+  a.instr:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fe8d08;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
   }
+
+  a.instr:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
   @media only screen and (max-width: 600px) {
     h1 {
       font-size: 3.5rem;
@@ -69,6 +89,7 @@ const Button = styled.button`
   }
   @media only screen and (max-width: 600px) {
     width: 35vw;
+    font-size: 0.8rem;
   }
 `;
 
