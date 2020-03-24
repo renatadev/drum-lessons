@@ -37,7 +37,7 @@ const LandingText = styled.div`
 `;
 
 const Button = styled.button`
-  width: 25vw;
+  width: 18vw;
   height: 8vh;
   font-weight: 700;
   margin: 0 2rem 0 2rem;
